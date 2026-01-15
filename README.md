@@ -5,14 +5,14 @@
 
 **Production observability platform for LLM applications with distributed tracing, cost tracking, and quality evaluation.**
 
-## 🎯 Business Impact
+## Business Impact
 
 - **Real-time cost tracking** preventing budget overruns
 - **Latency analysis** identifying performance bottlenecks
 - **Quality evaluation** ensuring response quality
 - **Full trace visibility** for debugging and optimization
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
@@ -31,27 +31,27 @@
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## ✨ Key Features
+## Key Features
 
-### 📊 Distributed Tracing
+### Distributed Tracing
 - Hierarchical span trees
 - Cross-service correlation
 - Error propagation tracking
 - Async-safe context management
 
-### 💰 Cost Tracking
+### Cost Tracking
 - Token usage per request
 - Cost attribution by user/session
 - Budget alerting
 - Model cost comparison
 
-### ⚡ Performance Metrics
+### Performance Metrics
 - Latency percentiles (P50, P95, P99)
 - Throughput monitoring
 - Time-to-first-token
 - Streaming performance
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 from src.tracing.tracer import LLMTracer, SpanKind
@@ -82,7 +82,7 @@ with tracer.span(trace.trace_id, "llm_call", SpanKind.LLM_CALL, model="gpt-4") a
 await tracer.end_trace(trace.trace_id)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 llm-observability-platform/
@@ -99,6 +99,6 @@ llm-observability-platform/
 └── configs/
 ```
 
-## 👤 Author
+## Author
 
 **Christopher Mangun** - [github.com/cmangun](https://github.com/cmangun)
